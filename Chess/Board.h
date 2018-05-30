@@ -6,7 +6,7 @@ class Board: public QWidget
 {
 	Q_OBJECT
 public:
-	Board();
+	Board(bool bRedSide);
 	~Board();
 	Stone stone[32];
 
@@ -37,10 +37,13 @@ public:
 	bool SameColor(int id_1,int id_2);
 	int  relation(int row1, int col1, int row, int col);
 	bool isBottomSide(int id);
+	int  getStoneCountAtLine(int row1, int col1, int row2, int col2);
+	int  getStoneId(int row, int col);
 private:
 	int  _r;//棋子半径
 	int  select_id;
-	bool bRedTurn;//轮到哪方走
+	bool bRedTurn;//轮到红方
+	bool _bSide;//上部分，还是下部分
 protected:
 	void mouseReleaseEvent(QMouseEvent *event);
 	void mousePressEvent(QMouseEvent *event);

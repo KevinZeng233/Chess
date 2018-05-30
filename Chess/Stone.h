@@ -25,28 +25,8 @@ public:
 
 	TYPE _type;
 
-	void init(int id);
-
-	QString getText()
-	{
-		switch (this->_type)
-		{
-		case CHE:
-			return "车";
-		case MA:
-			return "马";
-		case PAO:
-			return "炮";
-		case BING:
-			return "兵";
-		case JIANG:
-			return "将";
-		case SHI:
-			return "士";
-		case XIANG:
-			return "相";
-		}
-		return "错误";
-	}
+	void	 init(int id); 
+	QString  getText(); 
+	void	 rotate();
 };
 

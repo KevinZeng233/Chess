@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 	
-	Board board;
+	Board board(true);
 	board.show();
 
 

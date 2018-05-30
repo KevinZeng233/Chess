@@ -1,4 +1,4 @@
-#include "Stone.h"
+﻿#include "Stone.h"
 
 
 
@@ -56,4 +56,32 @@ void Stone::init(int id)
 		_col = 8 - pos[id - 16].col;
 		_type = pos[id - 16].type;
 	}
+}
+
+QString Stone::getText()
+{
+	switch (this->_type)
+	{
+	case CHE:
+		return "车";
+	case MA:
+		return "马";
+	case PAO:
+		return "炮";
+	case BING:
+		return "兵";
+	case JIANG:
+		return "将";
+	case SHI:
+		return "士";
+	case XIANG:
+		return "相";
+	}
+	return "错误";
+}
+
+void Stone::rotate()
+{
+	_col = 8 - _col;
+	_row = 9 - _row;
 }
