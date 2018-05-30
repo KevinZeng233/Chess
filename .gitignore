@@ -2,3 +2,4 @@
 *.obj
 *.tlog
 /x64
+/Chess/x64
