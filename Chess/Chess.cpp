@@ -5,3 +5,4 @@ Chess::Chess(QWidget *parent)
 {
 	ui.setupUi(this);
 }
+

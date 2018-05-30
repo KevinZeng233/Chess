@@ -1,0 +1,4 @@
+Chess.h|"D:\git\Chess\Chess\Chess.h" -o ".\GeneratedFiles\Debug\moc_Chess.cpp" "-I.\GeneratedFiles" "-I." "-ID:\qt_5.10.1_x64\include" "-I.\GeneratedFiles\Debug" "-ID:\qt_5.10.1_x64\include\QtCore" "-ID:\qt_5.10.1_x64\include\QtGui" "-ID:\qt_5.10.1_x64\include\QtANGLE" "-ID:\qt_5.10.1_x64\include\QtWidgets" -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+Chess.qrc|"D:\git\Chess\Chess\Chess.qrc" -o ".\GeneratedFiles\qrc_Chess.cpp" --name Chess
+Chess.ui|"D:\git\Chess\Chess\Chess.ui" -o ".\GeneratedFiles\ui_Chess.h"
+Board.h|"D:\git\Chess\Chess\Board.h" -o ".\GeneratedFiles\Debug\moc_Board.cpp" "-I.\GeneratedFiles" "-I." "-ID:\qt_5.10.1_x64\include" "-I.\GeneratedFiles\Debug\." "-ID:\qt_5.10.1_x64\include\QtCore" "-ID:\qt_5.10.1_x64\include\QtGui" "-ID:\qt_5.10.1_x64\include\QtANGLE" "-ID:\qt_5.10.1_x64\include\QtWidgets" -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB

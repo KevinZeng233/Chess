@@ -10,6 +10,7 @@ class Chess : public QMainWindow
 public:
 	Chess(QWidget *parent = Q_NULLPTR);
 
+	
 private:
 	Ui::ChessClass ui;
 };
