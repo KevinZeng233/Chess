@@ -50,6 +50,6 @@ private:
 	bool _bSide;//上部分，还是下部分
 protected:
 	void mouseReleaseEvent(QMouseEvent *event);
-	void mousePressEvent(QMouseEvent *event);
+	
 };
 
