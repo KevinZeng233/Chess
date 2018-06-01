@@ -42,12 +42,27 @@
     <ClCompile Include="Stone.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NetGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Chess.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="Board.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ChooseDlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="NetGame.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -63,6 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWnd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

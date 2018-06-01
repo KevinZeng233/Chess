@@ -1,13 +1,18 @@
 #include "Chess.h"
 #include <QtWidgets/QApplication>
-#include "Board.h"
+#include "ChooseDlg.h"
+#include "MainWnd.h"
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 	
-	Board board(true);
-	board.show();
-
+	ChooseDlg dlg;
+	if (dlg.exec() != QDialog::Accepted)
+	{
+		return 0;
+	}
+	MainWnd mainwnd(dlg.selected);
+	
 
 	return a.exec();
 }

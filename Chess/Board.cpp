@@ -6,10 +6,19 @@
     int __row = stone[__id]._row;\
     int __col = stone[__id]._col
 
-Board::Board(bool bRedSide)
+Board::Board(QWidget *parent /*= 0*/)
 {
 	resize(QSize(1000, 800));
-	for (int i=0;i<32;i++)
+	init(true);
+}
+
+Board::~Board()
+{
+}
+
+void Board::init(bool bRedSide)
+{
+	for (int i = 0; i < 32; i++)
 	{
 		stone[i].init(i);
 	}
@@ -23,11 +32,6 @@ Board::Board(bool bRedSide)
 	select_id = -1;
 	bRedTurn = true;
 	_bSide = bRedSide;
-}
-
-
-Board::~Board()
-{
 }
 
 void Board::paintEvent(QPaintEvent *event)
@@ -150,6 +154,11 @@ bool Board::getRowCol(QPoint pt, int& row, int& col)
 		}
 	}
 	return false;
+}
+
+void Board::click(int id, int row, int col)
+{
+
 }
 
 bool Board::canmove(int moveid, int killid, int row, int col)
@@ -423,18 +432,5 @@ void Board::mouseReleaseEvent(QMouseEvent *event)
 	}
 }
 
-void Board::mousePressEvent(QMouseEvent *event)
-{
-	//QPoint pt = event->pos();
-	//qDebug("posX:%d,posY:%d", event->x(), event->y());
-	//for (int i = 0; i < 32; i++)
-	//{
-	//	if (stonePolygon(i).containsPoint(pt, Qt::OddEvenFill) && !stone[i]._dead)//命中区域
-	//	{
-	//		select_id = i;
-	//		update();
-	//		break;
-	//	}
-	//}
-}
+
 

@@ -6,10 +6,11 @@ class Board: public QWidget
 {
 	Q_OBJECT
 public:
-	Board(bool bRedSide);
+	explicit Board(QWidget *parent = 0);
 	~Board();
 	Stone stone[32];
 
+	void    init(bool bRedSide);
 	void	paintEvent(QPaintEvent *event);
 
 	void	drawStone(QPainter &painter,int Id);
@@ -22,6 +23,9 @@ public:
 	//第二种方式
 	bool getRowCol(QPoint pt, int& row, int& col);
 	
+	//点击
+	void click(int id,int row,int col);
+
 	//移动规则判断
 	bool canmove(int moveid,int killid,int row,int col);
 	bool canmoveChe(int moveid, int killid, int row, int col);
